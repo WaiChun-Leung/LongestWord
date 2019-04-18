@@ -11,7 +11,7 @@ namespace LongestWord
         static void Main(string[] args)
         {
             Program a = new Program();
-            Console.WriteLine("The longest word is: ");
+            Console.Write("The longest word is: ");
             Console.WriteLine(a.MyFunctionA("Ada Lovelace wrote the first algorithm designed for processing by an Analytical Engine."));
         }
 
@@ -27,6 +27,10 @@ namespace LongestWord
             foreach (var word in words)
             {
                 //TODO
+                if (word.Length > x)
+                {
+                    x = word.Length;
+                }
             }
 
             // loop post condition: we now have array wordsLength which
